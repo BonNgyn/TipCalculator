@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
 
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
+        print("hi")
     }
 
     @IBAction func calculateTip(sender: AnyObject) {
@@ -39,6 +41,9 @@ class ViewController: UIViewController {
         
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
+    
+       
     }
 }
 
